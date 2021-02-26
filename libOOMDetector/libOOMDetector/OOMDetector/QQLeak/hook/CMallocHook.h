@@ -24,7 +24,7 @@
 #import <assert.h>
 #import <malloc/malloc.h>
 #import "QQLeakPredefines.h"
-#import "fishhook.h"
+#import <fishhook/fishhook.h>
 
 #ifdef __cplusplus
 extern "C" {

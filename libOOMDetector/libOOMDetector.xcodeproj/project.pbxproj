@@ -12,7 +12,6 @@
 		4A406D35207A18C900CAFBD2 /* CStackHighSpeedLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A406D33207A18C800CAFBD2 /* CStackHighSpeedLogger.mm */; };
 		4A406D36207A18C900CAFBD2 /* CStackHighSpeedLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A406D34207A18C900CAFBD2 /* CStackHighSpeedLogger.h */; };
 		4A6C2A18209C44FA005CCEE9 /* FOOMMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C2A16209C44FA005CCEE9 /* FOOMMonitor.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A6C2A19209C44FA005CCEE9 /* FOOMMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6C2A17209C44FA005CCEE9 /* FOOMMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A6C2A1C209C5438005CCEE9 /* HighSpeedLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6C2A1A209C5438005CCEE9 /* HighSpeedLogger.h */; };
 		4A6C2A1D209C5438005CCEE9 /* HighSpeedLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C2A1B209C5438005CCEE9 /* HighSpeedLogger.mm */; };
 		4A6C2A20209C6645005CCEE9 /* NSObject+FOOMSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6C2A1E209C6645005CCEE9 /* NSObject+FOOMSwizzle.h */; };
@@ -24,6 +23,7 @@
 		4AA4A0871FF1F9F6009F2921 /* COOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA4A0851FF1F9F6009F2921 /* COOMDetector.h */; };
 		4AA4A0881FF1F9F6009F2921 /* COOMDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AA4A0861FF1F9F6009F2921 /* COOMDetector.mm */; };
 		4AB88A2D22B8909800B44FA9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB88A2C22B8909800B44FA9 /* fishhook.c */; };
+		640AA28B25E8907F0054CBAF /* FOOMMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 640AA28A25E8907F0054CBAF /* FOOMMonitor.h */; };
 		6B9A04671FD57C5700414B1F /* libOOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A04651FD57C5700414B1F /* libOOMDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B9A04B91FD57C8A00414B1F /* QQLeakPredefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A046F1FD57C8A00414B1F /* QQLeakPredefines.h */; };
 		6B9A04BC1FD57C8A00414B1F /* CStackHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A04731FD57C8A00414B1F /* CStackHelper.h */; };
@@ -85,7 +85,6 @@
 		4A406D33207A18C800CAFBD2 /* CStackHighSpeedLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CStackHighSpeedLogger.mm; sourceTree = "<group>"; };
 		4A406D34207A18C900CAFBD2 /* CStackHighSpeedLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CStackHighSpeedLogger.h; sourceTree = "<group>"; };
 		4A6C2A16209C44FA005CCEE9 /* FOOMMonitor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FOOMMonitor.mm; sourceTree = "<group>"; };
-		4A6C2A17209C44FA005CCEE9 /* FOOMMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOOMMonitor.h; path = ../OOMDetector/main/FOOMMonitor.h; sourceTree = "<group>"; };
 		4A6C2A1A209C5438005CCEE9 /* HighSpeedLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighSpeedLogger.h; sourceTree = "<group>"; };
 		4A6C2A1B209C5438005CCEE9 /* HighSpeedLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HighSpeedLogger.mm; sourceTree = "<group>"; };
 		4A6C2A1E209C6645005CCEE9 /* NSObject+FOOMSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FOOMSwizzle.h"; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		4AA4A0861FF1F9F6009F2921 /* COOMDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = COOMDetector.mm; sourceTree = "<group>"; };
 		4AB88A2C22B8909800B44FA9 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		4AD45263206130AA00116ED9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		640AA28A25E8907F0054CBAF /* FOOMMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOOMMonitor.h; sourceTree = "<group>"; };
 		6B9A04621FD57C5700414B1F /* libOOMDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libOOMDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9A04651FD57C5700414B1F /* libOOMDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libOOMDetector.h; sourceTree = "<group>"; };
 		6B9A04661FD57C5700414B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -269,8 +269,8 @@
 		6B9A04851FD57C8A00414B1F /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				640AA28A25E8907F0054CBAF /* FOOMMonitor.h */,
 				6B9A04861FD57C8A00414B1F /* OOMDetector.h */,
-				4A6C2A17209C44FA005CCEE9 /* FOOMMonitor.h */,
 				6B9A04871FD57C8A00414B1F /* QQLeakChecker.h */,
 			);
 			path = Headers;
@@ -430,9 +430,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640AA28B25E8907F0054CBAF /* FOOMMonitor.h in Headers */,
 				6B9A04E61FD57C8A00414B1F /* CRegisterChecker.h in Headers */,
 				6B9A04CA1FD57C8A00414B1F /* QQLeakFileUploadCenter.h in Headers */,
-				4A6C2A19209C44FA005CCEE9 /* FOOMMonitor.h in Headers */,
 				6B9A04CD1FD57C8A00414B1F /* QQLeakChecker.h in Headers */,
 				6B9A04CC1FD57C8A00414B1F /* OOMDetector.h in Headers */,
 				6B9A04671FD57C5700414B1F /* libOOMDetector.h in Headers */,

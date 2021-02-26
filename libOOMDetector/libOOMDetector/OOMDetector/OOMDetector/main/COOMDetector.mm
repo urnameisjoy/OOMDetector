@@ -17,7 +17,7 @@
 //  and limitations under the License.
 
 #import "COOMDetector.h"
-#import "fishhook.h"
+#import <fishhook/fishhook.h>
 #import <dlfcn.h>
 
 #define do_lockHashmap \

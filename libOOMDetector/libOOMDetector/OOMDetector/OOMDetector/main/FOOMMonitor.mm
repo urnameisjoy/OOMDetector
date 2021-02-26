@@ -20,7 +20,7 @@
 #import "FOOMMonitor.h"
 #import "HighSpeedLogger.h"
 #import <malloc/malloc.h>
-#import "fishhook.h"
+#import <fishhook/fishhook.h>
 #import "QQLeakFileUploadCenter.h"
 #import "OOMDetector.h"
 #import "OOMDetectorLogger.h"
