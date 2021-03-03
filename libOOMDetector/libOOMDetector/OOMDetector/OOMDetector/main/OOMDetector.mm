@@ -123,8 +123,8 @@ void myChunkMallocCallback(size_t bytes, NSString *stack)
     // 开启内存触顶监控
     [self startMaxMemoryStatistic:OOMThreshhold];
     
-    // 显示内存悬浮球
-    [self showMemoryIndicatorView:YES];
+//    // 显示内存悬浮球
+//    [self showMemoryIndicatorView:YES];
 }
 
 - (void)showMemoryIndicatorView:(BOOL)yn
