@@ -138,7 +138,7 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
   s.requires_arc = false
-  s.requires_arc = ['libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.mm', 'libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.m']
+  s.requires_arc = ['libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.mm', 'libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.m', 'libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/FOOMMonitor.mm']
 
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
