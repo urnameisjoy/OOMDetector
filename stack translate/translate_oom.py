@@ -54,18 +54,20 @@ def translate(begin,key,prefix):
     QQ_addr_list = [];
     pre_begin = seek_str(0,prefix,len(Leak_log));
     begin = seek_str(pre_begin,key,len(Leak_log));
+    realEnd = seek_str(begin,"\"crash_type\"", len(Leak_log))
     while begin != -1 and pre_begin != -1:
         info = Leak_log[pre_begin:begin];
-        print "pre_begin:%d begin:%d\n" %(pre_begin,begin)
-        #     print "prefix:%s\n" % (prefix);
-        end = seek_str(begin + 1,key,len(Leak_log));
+        end = seek_str(begin + 1,prefix,realEnd);
+        print "pre_begin:%d begin:%d end:%d\n" %(pre_begin,begin, end)
     	if end == -1:
-            end = len(Leak_log);
-        strBegin = seek_str(begin,"\"",end);
+            end = realEnd;
+        strBegin = seek_str(begin + len(key),"\"",end);
         func_cnt = 0;
         while strBegin != -1:
             strEnd = seek_str(strBegin + 1,"\"",end);
+            # print "strBegin:%d strEnd:%d\n" %(strBegin, strEnd);
             str = Leak_log[strBegin+1:strEnd];
+            # print "get_addr %s..." %(str);
             addr = get_addr(str);
             if addr == 0:		
                 func_type_list.append(0);
@@ -78,8 +80,8 @@ def translate(begin,key,prefix):
         func_cnt_list.append(func_cnt);
         leak_info_list.append(info);
         stack_cnt = stack_cnt + 1;
-        pre_begin = seek_str(begin,prefix,len(Leak_log));
-        begin = seek_str(begin + len(key),key,len(Leak_log));
+        pre_begin = seek_str(begin,prefix,realEnd);
+        begin = seek_str(begin + len(key),key,realEnd);
         if begin == -1:
             break;
     if stack_cnt > 0:
@@ -149,7 +151,5 @@ max_length = 10000;
 translated_file = file_name + "_translated.log";
 result_fo = open(translated_file,"w");
 Leak_log = leak_fo.read();
-translate(0,"stack:","Malloc_size:");
+translate(0, "\"calls\":[", "\"stack_type\":");
 print"end Translation......";
-
-
